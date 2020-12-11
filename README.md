@@ -39,4 +39,4 @@ mongoDB 사용을 위한 시작 안내
 > ```
 
 ### 접속
-> `mongo --host monggodb`
+> `mongo --port 27017 `
