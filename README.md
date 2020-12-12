@@ -17,6 +17,7 @@ mongoDB 사용을 위한 시작 안내
 >    environment:
 >      MONGO_INITDB_ROOT_USERNAME: root
 >      MONGO_INITDB_ROOT_PASSWORD: example
+>      MONGO_INITDB_DATABASE: nodepractice
 >    volumes:
 >      - ./docker-volumes/mongodb-data:/data/db
 >  
@@ -39,4 +40,9 @@ mongoDB 사용을 위한 시작 안내
 > ```
 
 ### 접속
-> `mongo --port 27017 `
+> `mongo`
+
+### DB
+> * database list 보기: > `db`
+> * database 사용: > `use <database>`
+> * 종료: > `exit`
