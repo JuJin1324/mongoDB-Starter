@@ -40,9 +40,19 @@ mongoDB 사용을 위한 시작 안내
 > ```
 
 ### 접속
-> `mongo`
+> `mongo --username root --password example`
 
 ### DB
-> * database list 보기: > `db`
+> * database list 보기: > `show dbs`
 > * database 사용: > `use <database>`
 > * 종료: > `exit`
+> * connection url: `mongodb://<id>:<password>@<ip>:<port>/<dbname>?authSource=admin`   
+> * 예시: `mongodb://root:example@localhost:27017/nodepractice?authSource=admin`
+
+## query
+### find
+> 데이터베이스가 `dev` 이며 테이블이 `user` 의 모든 데이터 조회 
+> ```shell
+> use dev
+> db.user.find()
+> ```
